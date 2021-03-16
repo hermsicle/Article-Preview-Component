@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color:hsl(210, 46%, 95%);
+}
+
+.card {
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    width: 328px;
+    margin: 75px auto 0 auto;
+    background: white;
+    box-shadow: 0 25px 30px -24px hsl(212, 23%, 69%);
+    position: relative;
+}
+.card-img {
+    width: 100%;
+    height: 200px;
+}
+.drawers {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.card-content {
+    /* border: 1px solid orange; */
+    padding: 40px 30px 2rem 30px;
+}
+.card-content h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color:  hsl(214, 17%, 51%);
+}
+.card-content p {
+    line-height: 1.5;
+    font-size: 14px;
+    color: hsl(212, 23%, 69%);
+}
+
+.user {
+    /* border: 1px solid green;  */
+    display: flex;
+    padding: 20px 2rem 20px 2rem; 
+    position: relative;
+    height: 85px;
+}
+.user-image {
+    border-radius: 100%;
+    height: 42px;
+    width: 42px;
+}
+.user-name {
+    /* border: 1px solid orange; */
+    margin-left: 1rem;
+}
+.user-name .name {
+    font-weight: 700;
+    color:  hsl(214, 17%, 51%);
+    font-size: 13px;
+    margin-bottom: 0.25rem;
+}
+.user-name .date {
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-btn {
+    /* border: 1px solid orange; */
+    border-radius: 50%;
+    background: hsl(210, 46%, 95%);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.share-btn.active {
+    background: hsl(212, 23%, 69%);
+}
+.share-btn.active i {
+    color: hsl(210, 46%, 95%);
+}
+.socials {
+    position: relative;
+    height: 85px;
+    /* border: 1px solid orange; */
+    display: none;
+    align-items: center;
+    background:hsl(217, 19%, 35%);
+    padding: 20px 2rem 20px 2rem; 
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.socials h2 {
+    color: hsl(212, 23%, 69%);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.links {
+    /* border: 1px solid green; */
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18px;
+    cursor: pointer;
+}
+.links i {
+    color: hsl(210, 46%, 95%);
+    font-size: 1.5rem;
+}
+
+.share-btn-2 {
+    border-radius: 50%;
+    background: hsl(212, 23%, 69%);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.share-btn-2 i {
+    color: hsl(210, 46%, 95%);
+}
+
+
+@media (min-width: 750px) {
+    .card {
+        width: 730px;
+        display: flex;
+        margin: 250px auto;
+        padding: 0;
+        height: 290px;
+    }
+    .card-img {
+        /* border: 1px solid black; */
+        height: 100%;
+        width: 40%;
+    }
+    .drawers{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5rem;
+    }
+    .card-right {
+        /* border: 1px solid orange; */
+        width: 60%;
+    }
+    .card-content h2 {
+        font-size: 1.25rem;
+        /* border: 1px solid green; */
+        width: 95%;
+    }
+    .card-content p {
+        /* border: 1px solid orange; */
+        width: 95%;
+        font-size: 13px;
+    }
+    .card-content {
+        /* border: 1px solid green; */
+        padding-bottom: 0;
+    }
+    .socials {
+        display: none;
+        position: absolute;
+        top: 135px;
+        right: -77px;
+        border-radius: 0.5rem;
+        height: 55px;
+        filter: drop-shadow(0 2mm 3mm gray );
+    }
+    .socials:before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid hsl(217, 19%, 35%);
+        border-right: 10px solid hsl(217, 19%, 35%);
+        border-top: 10px solid hsl(217, 19%, 35%);
+        border-bottom: 10px solid hsl(217, 19%, 35%);
+        right: 115px;
+        top: 45px;
+        transform: rotate(45deg);
+    }
+    .share-btn-2 {
+        display: none;
+    }
+
+}
