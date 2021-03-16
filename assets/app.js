@@ -29,5 +29,8 @@ window.addEventListener('resize' , () => {
     if(window.innerWidth >= '900') {
         userContainer.style.display = 'flex'
     }
+    if(window.innerWidth <= 900 && isLinksActive) {
+        userContainer.style.display = 'none'
+    }
 })
 
