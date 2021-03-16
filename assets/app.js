@@ -26,3 +26,10 @@ for(let i = 0; i < shareBtns.length; i++ ) {
 
     })
 }
+
+window.addEventListener('resize' , () => {
+    if(window.innerWidth >= '900') {
+        userContainer.style.display = 'flex'
+    }
+})
+
