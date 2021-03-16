@@ -1,7 +1,5 @@
-const shareBtn2 = document.getElementById('share-btn-2')
 const userContainer = document.getElementById('user-container')
 const socials = document.getElementById('socials')
-
 const shareBtns = document.querySelectorAll('.share-btn')
 
 let isLinksActive = false
